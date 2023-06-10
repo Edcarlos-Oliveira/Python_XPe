@@ -1,0 +1,7 @@
+Instalado a extenssão Jupyter notebook
+Criado New Jupyter Notebook (ctrl + shift + p)
+Iniciado select kernel
+Criado o arquivo 'ex001Rl.ipynb'
+Instalado os modulos numpy (import numpy as np)
+Instalado matplotlib (python -U pip install matplotlib)
+Instalado scikit-learn(python -U pip install scikit-learn)

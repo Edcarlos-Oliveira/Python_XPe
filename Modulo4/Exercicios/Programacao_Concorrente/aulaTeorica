@@ -1,0 +1,12 @@
+Processos:
+    Programas em execução
+
+Concorrencia:
+    Realiza várias tarefas em periodos de tempos sobrepostos
+    Propriedades da Concorrencia:
+        Vários atores => cada processo e threads tentando realizar tarefas definidas
+        Compartilhamento de recursos => Processos e threads compartilham memoria e disco
+        Regras => Garante a execução a cada uma das tarefas
+    
+Paralelismo:
+    Execução simultaneas de tarefas

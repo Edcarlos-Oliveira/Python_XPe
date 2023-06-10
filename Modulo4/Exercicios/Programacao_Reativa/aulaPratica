@@ -1,0 +1,13 @@
+Introdução:
+    Espera uma ação externa para executar determinado evento
+    Envia item a um Observer
+    Pode ser criado por 'create':
+        On_text: função chamada sempre que o 'observable' emite um item
+        On_complete: função chamada sempre que um 'observable' termina a execução
+        On_error: função chamada quando há um erro
+
+Parametros:
+    Observable => Observa o conjunto de eventos(emite os dados)
+    Observer => Consome os dados
+    Operador => Realiza as transações dos dados
+

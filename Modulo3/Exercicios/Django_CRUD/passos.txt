@@ -1,0 +1,92 @@
+-----------------------------Iniciando CRUD-------------------------------------
+Iniciar abrindo a pasta CRUD (cd Django_CRUD)
+CRUD (create, read, update, delete )
+Verificar a versão do python (python --version)
+Caso precise criar um ambiente virtual (python3 -m venv ./env)
+Instalar o 'django' (pip install django)
+Ativar no Windows(PowerShell) o ambiente virtual (.\env\Scripts\activate.ps1)
+Finalizar o ambiente virtual (deactivate)
+Criar Projeto django (django-admin startproject projetoCRUD)
+Abrir a Pasta do Projeto 'projetoCRUD' (cd projetoCRUD)
+Criar o Aplicativo 'appCRUD' (python manage.py startapp appCRUD) 
+Fazer as configurações do setting.py(arquivos estaticos e templates)
+Adcionado no 'settings.py' os seguintes comandos:
+    - INSTALLED_APPS => Recebeu => 'appCRUD'
+    - TEMPLATES 'DIRS' => Recebeu => 'templates'
+    - STATIC_URL => Acrescentou abaixo: 'STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')'
+    - Importado o módulo 'os'
+Criar arquivo de 'urls.py' e 'forms.py' dentro do 'appCRUD'
+Criar pastas 'static(CSS e JS)' e templates no 'appCRUD'
+Executa no terminal 'ls' para verificar os caminhos dos arquivos
+Testa o servidor no terminal com a pasta 'manage.py' (python manage.py runserver)
+Instalando as migrações nativas do django no momento de executar o servidor (python manage.py migrate)
+Testando o servidor
+
+
+-----------------------------Models e forms-------------------------------------
+Criado o code dos 'forms' e 'model'
+Criar migrações do 'models User' (python manage.py makemigrations)
+Executado o comando 'makemigrations' (python manage.py makemigrations)
+Executado o comando 'migrate' (python manage.py migrate)
+Criado o code 'admin.py' para acessar o 'administration'
+Criado super usuário (python manage.py createsuperuser)
+Acessado a área de adm e adcionado 1 usuário (loguin => Edcarlos, senha 123)
+
+-----------------------------Criação e Leitura de Rotas-------------------------------------
+Criando as rotas no arquivo 'urls.py'
+Criando o code das 'views.py', importado os modulos 'multiprocessing context' e '.forms UserForm'
+Criado no template do appCRUD os arquivos 'index.html', 'base.html' e 'criar.html'
+Criado os code de 'index.html', 'base.html' e 'criar.html'
+Alterado a 'urls' do projetoCRUD
+Criado em 'views.py' na 'def index' o code 'users = User.object.all()'
+Criado em 'views.py' na 'def index' o code 'context = 'users': users
+Criado a rota para o botão 'adicionar usuário'
+Importado o 'redirect' para mostrar os usuários cadastrados
+
+-----------------------------Criação do Refresh-------------------------------------
+Alterou a 'urls.py' do 'appCRUD' o campo 'modify' passou a ser 'refresh'
+Alterou a 'views.py' a 'def modify' passou a ser 'def refresh'
+Importou o modulo 'refresh'
+Criado o code na 'def refresh'
+Criado o 'btn-edit' no arquivo 'index.html'
+Testado o 'btn edit'
+
+-----------------------------Criação do Delete-----------------------------------------
+Criando a rota 'delete' no arquivo 'url.py' do 'appCRUD'
+Importado o modulo 'delete'
+Criado o code na 'def delete'
+Criado o 'btn delete' no arquivo 'index.html'
+Testado o 'btn delete'
+
+-----------------------------Verificando Erros-----------------------------------------
+Criada a pasta 'tests' dentro do 'appCRUD'
+Criado os arquivos '__init__.py' e 'test_models.py' dentro da pasta 'tests'
+Importado o 'coverage' (pip install coverage)
+Criado o arquivo '.coveragerc' dentro do 'projetoCRUD'
+Executado a verificação (coverage run manage.py test)
+Verificado os arquivos analisados com  (coverage report)
+Criando pasta 'htmlcov' dentro do 'projetoCRUD' (coverage html)
+Entrou na pasta 'htmlcov' (cd htmlcov)
+Executado o servidor html (python -m http.server 8000 --bind 127.0.0.1)
+
+-----------------------------Testes Models e Forms-----------------------------------------
+Criado o code no arquivo 'test_models'
+Executado o teste do arquivo 'models.py'
+Necessário deletar a pasta 'htmlcov' para criar novamente com as atualizações
+Criando pasta 'htmlcov' dentro do 'projetoCRUD' (coverage html)
+Executado o servidor html (python -m http.server 8000 --bind 127.0.0.1)
+
+-----------------------------Testes Views--------------------------------------------------
+Criado o arquivo 'test_views.py' na pasta 'tests'
+Importado os modulos necessários (django.test => TestCase, Client), (django.urls => reverse_lazy), (django => User)
+Criado a 'class' de verificação
+Criado as funções de testes
+
+
+
+
+
+
+
+
+

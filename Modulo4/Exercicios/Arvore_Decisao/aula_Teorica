@@ -1,0 +1,36 @@
+Introdução:
+    É um dos métodos mais práticos e mais utilizados para aprendizagem indutiva;
+    Adquirem conhecimentos simbolicos a partir da base de treinamento.
+
+Características:
+    Viés Indutivo => Quanto menor a árvore melhor será a indução do algoritmo.
+    Também pode ser representado por conjuntos de regras (Se-Então)
+
+Processo de Criação da Arvore de Decisão:
+    O algoritmo 'aprende' arvores de decisão de cima para baixo (TOP-DOWN)
+    O atributo raiz tem maior ganho de informação
+
+Metódo de Entropia:
+    Mede o nível de desordem dos dados.
+    Caracteriza a (im)pureza de uma coleção arbitrária de exemplos
+    Exemplo:
+        Dado uma coleção S contendo exemplos POSITIVOS(+) e NEGATIVOS(-) de alguma variável
+        alvo, a entropia de S relativa a esta classificação boleana é:
+        Entropia:
+            (S) = - p + log2 p+ - p_log2 p_
+        Onde;
+            p+ é a proporção de exemplo positivos em S
+            P- é a proporção de exemplos negativos em S 
+    Variação:
+        A função entropia relativa a uma classificação boleana, como a proporção, p+ de exemplos 
+        positivos varia entre 0 e 1
+
+Ganho de Informação:
+    Redução esperada na entropia devido a ordenação sobre A, ou seja, a redução esperada na entropia
+    pela partição dos exemplos de acordo com este atributo A.
+    Exemplo:
+        Gain(T, X) = Entropy(T) - Entropy(T, X)
+
+Importação do 'pandas' para criação da arvore de decisão (import pandas as pd)
+
+

@@ -1,0 +1,13 @@
+-----------------------------Preparando o Ambiente---------------------------------
+Criado a pasta 'aula2'
+Criado o ambiente virtual 'env' (python3 -m venv ./env)
+Ativado o ambiente virtual 'env' (.\env\Scripts\activate.ps1)
+Instalação do 'requests' e 'unittest2' (pip install requests unittest2)
+Criado o arquivo 'teste.py' e importado os modulos 'requests' e 'unittest'
+Criado a 'class' dos testes
+Executando o teste do arquivo 'teste.py' (python3 -m unittest -v teste.py)
+Criado dois testes de integração
+Obs: Deu erro, pois o arquivo Flask_CRUD precisa arrumar erros na 'index' e 'create'
+
+
+

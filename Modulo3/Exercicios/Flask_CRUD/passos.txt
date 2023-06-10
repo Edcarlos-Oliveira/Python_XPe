@@ -1,0 +1,30 @@
+flas-----------------------------------------Prepração do ambiente-------------------------------------------
+Criação da pasta 'Flask_CRUD', copiado e colado os arquivos do projeto anterior 'flask' na pasta criada
+Carregado a pasta 'Flask_CRUD' no terminal (cd Flask_CRUD)
+Ativadado o ambiente virtual 'env' (env\Scripts\activate.ps1)
+Iniciar o arquivo 'app.py' (set app.py)
+Instalar o 'flask-migrate' (pip install flask-migrate)
+Iniciado no terminal o 'db init (flask db init)
+Criado as migrações no terminal 'db migrate' (flask db migrate)
+Executado o 'db upgrade' (flask db upgrade)
+
+-----------------------------------------Trabalhando no Projeto-------------------------------------------
+Alterado a 'def index' do arquivo 'app.py' para apenas renderizar
+Alterado no arquivo 'app.py' o '@app.route' somente para 'GET'
+Excluido do arquivo 'app.py' o modulo 'NameForm'
+Deletado o arquivo 'form.py'
+Criado a pasta 'controllers' e 'routes' na pasta 'Flask_CRUD'
+Criado o arquivo 'user.py' dentro da pasta 'routes'
+Importado o modulo 'BluePrint'
+Criado na pasta 'controllers' o arquivo 'UserController.py'
+Criado as rotas no arquivo 'user.py'
+Importado o modulo 'user_bp' criado no Projeto
+Registrado a rota no arquivo 'app.py'
+
+-----------------------------------------Configurando-------------------------------------------
+Criado o arquivo '__init__.py' para exportar todo o modulo de 'user' (from user import *)
+Iniciado o banco de dados no arquivo 'UserController.py'
+Criado a função 'def index' no arquivo 'UserController.py'
+Criado a função 'def store' no arquivo 'UserController.py'
+Baixar o programa 'insomnia' para fazer os 'My request'
+Criado 5 endpoints no programa 'insomnia'

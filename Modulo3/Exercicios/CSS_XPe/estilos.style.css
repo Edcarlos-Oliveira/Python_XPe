@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Aplicando estilo no html h2 */
+h1 {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+p {
+    line-height: 2em;
+}
+
+/* Nesse caso chamamos o 'id' do html com o '#'*/
+#primeiro {
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Nesse caso chamamos o 'class' do html com o '.' */
+.escolhido {
+    background-color: yellow;
+    text-align: center;
+    color: blueviolet;
+    border-radius: 10px;
+}
+h2 {
+    background-color: beige;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+}
+
+/* Chamando 'div' no CSS */
+div {
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+    background-color: bisque;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Posicionamentos */
+h4 {
+    position: static;
+    border: 3px solid blue;
+}
+
+.relative {
+    position: relative;
+    right: 20px;
+    border: 2px solid red;
+    width: 200px;
+    height: 100px;
+}
+
+.fixed {
+    position: fixed;
+    left: 20px;
+    border: 2px solid yellow;
+    width: 150px;
+    height: 75px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 20px;
+    border: 2px solid blue;
+    width: 100px;
+    height: 40px;
+}

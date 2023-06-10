@@ -1,0 +1,20 @@
+Introdução:
+    K-MEANS não é KNN(Algoritmo supervisionado)
+
+Agrupamentos:
+    É o ajuntamento de caracteristicas comuns em dado cenário
+    Segmentação de observações
+    Agrupamentos de itens similares
+    Perfis de cliente (Amazon Prime)
+    Ocorre de forma não supervisionada
+    Observa a limitação dos Agrupamentos
+
+Aprendizados:
+    Fornecer valores para os centroides
+    Gerar uma matriz de distancia entre cada ponto e os centroides
+    Colocar cada ponto nas classes de acordo com a sua distância do centroide da classe
+    Calcular os novos centroides para cada classe
+    Repetir até a convergência
+
+
+

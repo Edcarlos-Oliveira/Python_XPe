@@ -1,0 +1,52 @@
+---------------------------------Preparando o ambiente---------------------------------
+Verificar a versão do python (python --version)
+Caso precise criar um ambiente virtual (python3 -m venv ./env)
+Ativar no Windows(PowerShell) o ambiente virtual (.\env\Scripts\activate.ps1)
+Instalar o 'django' (pip install django)
+Verificar a versão do 'django' (python -m django --version)
+Criar um local para guardar as dependencias (pip freeze > requirements.txt)
+'ls' mostra todos os arquivos
+
+------------------------------Criação Projeto1 e app1-----------------------------------
+'cd projeto1' entra na pasta 'projeto1'
+Abrindo o servidor 'django' (python manage.py runserver)
+Fazer as configurações do setting.py(arquivos estaticos e templates)
+Criação aplicativo dentro do projeto 'django' (python manage.py startapp app1)
+
+-----------------------------Configurando as urls------------------------------------
+Configurado as urls (projeto1 e app1)
+Criado uma view (index)
+Criado a pasta de templates no app1
+
+-------------------------------Configurando os models-------------------------------------
+Criado Migrações do model User (python manage.py makemigrations)
+Aplicado as Migrações (python manage.py migrate)
+
+------------------------------admin e python shell---------------------------------------
+python shell (python manage.py shell) verificação de criação de tabelas
+Criação de super usario (python manage.py createsuperuser)
+registrado o models admin.py (app1)
+
+-------------------------------Arrumando os erros--------------------------------------
+Houve erro de inserção de dados no campo telefone
+Mudar o campo models do telefone
+    Criar migrações do model User (python manage.py makemigrations)
+    Aplicar as migrações (python manage.py migrate)
+Criar templates (dois arquivos html foram criados na pasta tampletes/'user')
+Alteração na views e urls do app1
+
+-------------------------------Criar Formulários--------------------------------------
+Criou Formulários
+Testou formulário (utilizando o GET)
+Criado o 'base.html' em templates
+jinja (engine de templates) => ajuda a inserir códigos no templete
+Alterou o 'doctype' do base.html para '{% load static %}'
+bootstrap (Css pré pronto)
+
+-------------------------------Criar pg Dinâmicas--------------------------------------
+Criação de páginas dinâmicas com método 'post' (alterando index.html, views e urls.py)
+Criação de páginas dinâmicas com query params 
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 Eventos Html XPe</title>
+</head>
+<body onload="load()">
+    <h1>Trabalhando com Eventos:</h1>
+    <ul>
+        <p>Principais atributos eventos, clique sobre <a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">EVENTOS</a> e veja a documentação:</p>
+        <li>onChange (Dispara no momento em que o elemento é alterado)</li>
+        <li>onClick (Dispara com um clique do mouse no elemento)</li>
+        <li>onLoad (Dispara quando a página termina de carregar)</li>
+        <li>onMouseOver (Dispara quando o ponteiro do mouse se move sobre um elemento)</li>
+        <li>onMouseOut (Dispara quando o ponteiro do mouse se move para fora de um elemento)</li>
+        <li>onSubmit (Dispara quando um formulário é enviado)</li>
+    </ul>
+
+    <p>Criando um evento com o atributo 'onchange' de função nome 'change'</p>
+    
+    <label for="testando">Testando Eventos</label>
+    <input onchange="change()" type="text" id="ip">
+    <button onclick="clicar()">Enviar</button><br><br>
+    <img onmouseover="mouse()" src="" alt="Imagem Perfil GitHub Edcarlos" id="img">
+    <div>
+        <a onmouseout="saindo()" href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Link da documentação sobre eventos HTML5</a><br> <br>
+    </div>
+    <form onsubmit="sair()" action=""><input type="submit" value="Satisfeito"></form>
+
+    <script>
+        function change() {
+            alert('Você digitou algo!');
+        }
+
+        function clicar() {
+            alert(document.getElementById('ip').value)
+        }
+        
+        function load() {
+            document.getElementById('img').src='img/Edcarlos.png'
+        }
+        
+        function mouse() {
+            alert('Você está interagindo com a imagem do perfil do Edcarlos')
+        }
+
+        function saindo() {
+            alert('Verifique a documentação completa sobre os eventos')
+        }
+
+        function sair() {
+            alert('Não quero ver mais nada!')
+        }
+    </script>
+    
+</body>
+</html>

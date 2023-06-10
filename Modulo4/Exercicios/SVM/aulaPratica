@@ -1,0 +1,19 @@
+Introdução:
+    Utilizado para tarefas complexas:
+    Reconhecimento de caracteres, voz, facial entre outras;
+    Superior a outros algoritmos até chagada do deep learning
+    Separação máxima de margens em hiperplanos
+
+Aprendizagem:
+    Criação do hiperplano - convex hulls (envoltória convexa)
+
+Vantagens:
+    Não é muito influenciado por ruído dos dados
+    Utilizado para classificação e regressão
+    Aprende conceitos não presentes nos dados originais
+    Muito mais prático que RNAs
+
+Desvantagens:
+    Testar várias combinações de parâmetros
+    Lento
+    Caixa preta

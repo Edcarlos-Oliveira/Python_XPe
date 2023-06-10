@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask - Index</title>
+</head>
+<body>
+    <h1>Olá {% if name %} {{name}} {% endif %}!</h1> <!--Chamando 'nome' com jinja-->
+
+    <form methods="POST"> <!--Chamando o formulário com jinja-->
+        {{form.hidden_tag()}} <!--Campo oculto-->
+        {{form.name.label}} {{form.name}} <!--'form.name.label' do formulário, o que vai ser perguntado, 'form.name', nome do campo-->
+        {{form.submit}} <!--Nome  do campo-->
+    </form>
+</body>
+</html>

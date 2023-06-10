@@ -1,0 +1,12 @@
+-----------------------------Preparando o Ambiente---------------------------------
+Criado a pasta 'test_intro'
+Criado o ambiente virtual 'env' (python3 -m venv ./env)
+Ativado o ambiente virtual 'env' (.\env\Scripts\activate.ps1)
+Instalação do 'unittes2' (pip install unittest2)
+Criado o arquivo 'teste.py' e importado o módulo 'unittest'
+Criado o arquivo 'root_square_solver.py' para criar a função do teste
+Importado o modulo 'sqrt' no arquivo 'root_square_solver' para calcular a raiz quadrada (from math import sqrt)
+Para executar a verificação do arquivo 'teste.py' (python -m unittest -v teste.py)
+Criado as funções de testes
+
+

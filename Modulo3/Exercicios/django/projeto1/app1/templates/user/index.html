@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Index</title>
+</head>
+<body>
+    <h1>Index User</h1>
+
+     <!--Criando uma condição com JINJA (páginas dinâmicas usando 'post')-->
+    {% if nome %}
+     <h2>Seu nome é: {{nome}}</h2>
+    {% endif %}
+
+    {% if telefone %}
+        <h3>Seu telefone é: {{telefone}}</h3>
+    {% endif %}
+
+    {% if email %}
+        <h4>Seu email é: {{email}}</h4>
+    {% endif %}
+
+    {% if id %}
+        <h5>Seu id é: {{id}}</h5>
+    {% endif %}
+
+    
+    <p>Criando Templetes em Django</p>
+    <a href="https://docs.djangoproject.com/en/4.1/topics/templates/" target="_blank">Documentação templates DJANGO, clique aqui.</a>
+    <P>Utilizado nos arquivos 'base.html e criar.html' com jinja e bootstrap:</P>
+    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Documentação BOOTSTRAP, clique aqui.</a><br><br>
+    <a href="https://jinja.palletsprojects.com/en/3.1.x/" target="_blank">Documentação JINJA, clique aqui</a>
+</body>
+</html>

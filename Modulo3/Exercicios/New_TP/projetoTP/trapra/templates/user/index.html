@@ -1,0 +1,41 @@
+<!--Estendendo o arquivo para a 'base.html'-->
+{% extends "base.html" %}
+
+{% block content %}
+
+<form class="col py-3 px-md-5 border" method="POST" autocomplete="off">
+    <!--Proteção criada para não receber code via post de outros lugares-->
+    {% csrf_token %} 
+
+    <!--Procura os campos field em form e renderiza para field-->
+    <h6 class="text-center">Digite os coeficientes da equação do segundo grau:</h6><br>
+    
+    {% for field in form %}   
+       
+            <div class="form.group row">
+                <label for="{{ field.id_for_label }}" class="col-sm-2 col-form-label">{{ field.label }}</label>
+                <div class="col-sm-10">
+                    {{ field }}
+                </div><br><br>
+            
+            <!--Aqui serão tratados os erros e mostra na tela-->
+            </div>
+            {% if field.erros %}
+            {% for error in field.erros %}
+            <div class="offset-sm-2 col-sm-10">
+                <span class="badge badge-pill badge badge-danger">{{ error }}</span>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+            <!--Criação do botão-->
+            <div class="row justify-content-end">
+                <button class="btn btn-primary" type="submit" name="acao" value="calcular">Calcular</button>
+                {% if a == 0  %}
+                <p class="col py-3">Uma Raiz: X' = {{b}}</p>
+                {% elif a > 0  %}
+                <p class="col py-3">Duas Raizes: X' = {{b}} e X'' = {{c}}</p>
+                {% endif %}
+            </div>
+</form>
+{% endblock %}

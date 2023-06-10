@@ -1,0 +1,33 @@
+----------------------------------------Preparando o Ambiente-------------------------------------------------
+Criado a pasta 'new_flask_crud'
+Criado o ambiente virtual 'env' (python3 -m venv ./env)
+Ativado o ambiente virtual 'env' (.\env\Scripts\activate.ps1)
+Instalado o flask (pip install flask)
+Criado o arquivo 'requeriments.txt para guaradar as dependências (pip freeze > requeriments.txt)
+
+----------------------------------------Criação do appCRUD-------------------------------------------------
+Criado na raiz do projeto 'new_flask_crud' o arquivo 'appCRUD.PY'
+Criado a função 'def index' com a rota '@app.route' estatica (@app.route())
+Criado a função 'def user' com a rota '@app.route' dinâmica (@app.route('/user/<name>'))
+Testado as duas rotas
+
+----------------------------------------Criação Templates-------------------------------------------------
+Criado a pasta 'templates' dentro da pasta 'new_flask_crud'
+Criado o arquivo 'user.html' dentro da pasta 'template'
+Criado o code no arquivo 'user.html'
+Importado o modulo 'render_template'
+Criado as rotas estaticas e dinamicas para renderizar o 'user.html'
+
+----------------------------------------Criação Config-------------------------------------------------
+Criado o arquivo 'config.py'
+Importado o modulo 'os'
+Criado as 'class' no arquivo 'config.py'
+
+----------------------------------------Criação Model-------------------------------------------------
+Criado a pasta 'model'
+Criado o arquivo 'user.py' dentro da pasta 'model'
+Instalado 'flask migrate' (pip install Flask-migrate)
+Criado o arquivo 'requeriments.txt' (pip freeze > requeriments.txt)
+
+
+

@@ -1,0 +1,49 @@
+-------------------Prepração do ambiente------------------------
+Criado o ambiente virtual (python3 -m venv env)
+Ativado o ambiente virtual (env\Scripts\activate.ps1)
+Instalação do flask (pip install flask)
+Verificado a versão do flask (python -m flask --version)
+Guradado as dependências (pip freeze > requeriments.txt)
+
+-------------------Criando um Projeto----------------------------
+Antes de iniciar abrir as pastas 'flask'(cd flask/) e '1'(cd 1/)
+Ativar o ambiente virtual (env\Scripts\activate.ps1)
+Criando o primeiro projeto com flask (app.py)
+Servidor 'app.py'
+Criou a primeira rota '/' index
+Indicar o arquivo que vai subir no servidor (set app.py)
+Subir o servidor, inicia a aplicação web (flask run)
+Quando altera qualquer informação vai precisar restatar o servidor
+
+-------------------Criando Templates--------------------------------
+Criar doc html (usar como template)
+Renderizar o template
+Templates estaticos e rotas dinâmicas
+Criando templates dinâmicos com (query prams)
+Alterando o index.html com jinja 
+
+-------------------Criação de Formulários----------------------------
+Instalar dependência (pip install flask.wtf)
+Atualizar o arquivo requirements.txt (pip freeze > requeriments.txt) 
+Criado o arquivo 'form.py' para criação do formulário.
+Importado as dependências
+Importou classes de formulários
+
+-------------------ORMs DO FLASK (Criando Models)---------------------
+Antes de iniciar abrir as pastas 'flask'(cd flask/) e '1'(cd 1/)
+Criando os Models, alteração do app
+Importando o Flask Migrate (pip install flask-migrate)
+Instalado o flask-sqlalchemy ('pip install flask-sqlalchemy')
+Criado os arquivos 'config.py' e 'User.py'
+
+-------------------Criando as Migrações-------------------------------------------------
+Inicializado o 'flask db init' (flask db init) criou a pasta 'migrations'
+Inicializado o 'flask db migrate' (flask db migrate) criou o arquivo 'py' dentro de 'migrations version'
+Inicializado o 'flask db upgrade' (flask db upgrade) criou a pasta 'data.db'
+Primordial manter 3 barras após o comando 'sqlite:///', senão dar erro
+
+-------------------Utilizando o DBeaver-------------------------------------------------
+Instalação do 'DBeaver'
+Importação do 'data.db' no 'DBeaver'
+Utilizou o 'DBeaver' para visualizar as tabelas (migrações.User)
+
